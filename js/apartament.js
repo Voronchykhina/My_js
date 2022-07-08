@@ -53,6 +53,15 @@
 // 10. Перебери объект apartment используя цикл for...in и запиши в массив keys все его ключи, 
 // а в массив values все значения его свойств.
 
+// 11. Выполни рефакторинг решения предыдущего задания добавив 
+// в цикл for...in проверку на собственное свойство.
+
+// 12. Перебери объект apartment используя метод Object.keys() 
+// и цикл for...of. Запиши в переменную keys массив ключей 
+// собственных свойств объекта apartment, и добавь в массив 
+// values все значения его свойств.
+
+
 const apartment = {
     // imgUrl: "https://via.placeholder.com/640x480",
     descr: "Spacious apartment in the city center",
@@ -65,14 +74,57 @@ const apartment = {
     //     email: 'henry.carter@aptmail.com',
     // }
 };
-const keys = [Object];
-const values = [];
+const values = ["Spacious apartment in the city center", 4, 2153];
+
+// Change code below this line
+
+
+const keys = Object.keys(apartment);
+for (key of keys) {
+    values.push(apartment[key]);
+}
+
+
+console.log(keys) // ["Spacious apartment in the city center", 4, 2153].
+
+
+// const keys = [];
+// const values = [];
+// const advert = {
+//     service: "apt",
+// };
+
+// const apartment = Object.create(advert);
+// apartment.descr = "Spacious apartment in the city center";
+// apartment.rating = 4;
+// apartment.price = 2153;
+
+// for (const key in apartment) {
+
+  // Change code below this line
+
+    // if (apartment.hasOwnProperty(key)) {
+    //     keys.push(key);
+    //     values.push(apartment[key]);
+    // }
+    // console.log(key);
+    // console.log(apartment[key]);
+
+//   keys.push(key);
+//   values.push(apartment[key]);
+
+  // Change code above this line
+// }
+
+
 
 // 10. Change code below this line
-for (const keys in apartment) {
-console.log(keys);
-console.log(apartment[keys]);
-}
+// for (const key in apartment) {
+//     if (apartment.hasOwnProperty(key)) {
+//         keys.push(key);
+//         values.push(apartment[key]);
+//     }
+// }
 
 // 7. Change code below this line
 // apartment.area = 60;
