@@ -54,8 +54,8 @@ function calculateTotalPrice(productName) {
   for (const product of products) {
     if (product.name === productName)
     return product.price * product.quantity
-   }
- return 0
+  }
+return 0
 
 
 

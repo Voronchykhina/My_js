@@ -61,6 +61,11 @@
 // собственных свойств объекта apartment, и добавь в массив 
 // values все значения его свойств.
 
+// 13. Запиши в переменную keys массив ключей собственных 
+// свойств объекта apartment, а в переменную values массив 
+// всех значений его свойств. Используй методы Object.keys() 
+// и Object.values().
+
 
 const apartment = {
     // imgUrl: "https://via.placeholder.com/640x480",
@@ -74,18 +79,20 @@ const apartment = {
     //     email: 'henry.carter@aptmail.com',
     // }
 };
-const values = ["Spacious apartment in the city center", 4, 2153];
+
+// 15. Change code below this line
+// const keys = Object.keys (apartment);
+// const values = Object.values (apartment);
+
+//12. const values = ["Spacious apartment in the city center", 4, 2153];
 
 // Change code below this line
+// const keys = Object.keys(apartment);
+// for (key of keys) {
+//     values.push(apartment[key]);
+// }
 
-
-const keys = Object.keys(apartment);
-for (key of keys) {
-    values.push(apartment[key]);
-}
-
-
-console.log(keys) // ["Spacious apartment in the city center", 4, 2153].
+// console.log(keys) // ["Spacious apartment in the city center", 4, 2153].
 
 
 // const keys = [];
